@@ -27,7 +27,7 @@
         /* swiper-button은 absolute를 가지고 있기 때문에 위치를 자유롭게 설정할 수 있다. */
         main .popular .container .swiper-button-prev {left: 0px; color: white; opacity: 1;}
         main .popular .container .swiper-button-next {right: 0px; color: white; opacity: 1;}
-
+        main .popular .container .swiper-pagination { top: 300px;}
     </style>
 </head>
 <body>
@@ -93,6 +93,9 @@
             navigation:{
                 prevEl:'.popular .container .swiper-button-prev',
                 nextEl:'.popular .container .swiper-button-next',
+            },
+            pagination: {
+                el: '.popular .container .swiper-pagination',
             },
         })
     </script>
