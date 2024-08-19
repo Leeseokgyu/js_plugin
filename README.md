@@ -15,3 +15,8 @@
 * 공통 swiper 클래스 대상 기준 사용 가능한 css list : 'width, margin, padding, position, transform, 꾸미는 속성(background, color, font...)
 * 공통 swiper, swiper-wrapper 클래스에 flex 설정금지!
 * 공통 swiper-wrapper 금지속성 : 레이아웃 관련한 속성들(position, flex, float, width, height, margin(padding만 가능)
+### Swiper option css 주의사항
+* prev, next, pagination, scroll-bar
+* 위 옵션들은 필요한 경우에만 선택적으로 작성한다.
+* 기본적으로 swiper 시작태그의 자식요소로 작성한다.
+* swiper 시작태그의 바깥쪽 의치로 디자인하곻 싶은 경우만 swiper바깥쪽 위치에 태그를 구성하고 해당 위치이 새로운 부모 대상에 position:relative를 설정한다. (swiper 옵션들에 absolute가 내장되어 있기 때문!)
